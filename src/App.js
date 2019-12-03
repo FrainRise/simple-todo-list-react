@@ -46,9 +46,9 @@ class App extends React.Component {
         <header className="App-header">
           <h2 style={{fontSize: '60px'}}>Plan your day</h2>
           <input onChange={this.handleInputChange} value={this.state.currentTodo} type="text" placeholder="Enter your todo plan" />
-          <button onClick={this.handleCreateTodo} className="btn-create"> Add task</button>
+          <button onClick={this.handleCreateTodo} className="btn-create">Add task</button>
           <br/>
-          {this.state.todoList === 0 ? "You haven't todo tasks yet" : <ul>{createdTodoItems}</ul>}
+          {this.state.todoList.length === 0 ? <p>You haven't todo tasks yet</p> : <ul>{createdTodoItems}</ul>}
         </header>
       </div>
     );
