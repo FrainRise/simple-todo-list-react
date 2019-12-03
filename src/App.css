@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,4 +15,80 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+.App-header input, .App-header input::placeholder {
+  margin: 50px;
+  padding: 10px;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  font-size: 20px;
+  text-align: center;
+  transform: scale(1.5);
+  transition: .3s all ease-in;
+}
+
+.App-header input:hover, input:hover::placeholder {
+  border-bottom: 1px solid #09d3ac;
+  color: #09d3ac;
+  transition: .3s all ease-out;
+}
+
+
+.App-header .btn-create {
+  width: 150px;
+  height: 40px;
+  background: #09d3ac;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  transition: .5s all ease-in;
+}
+
+.App-header .btn-create:hover {
+  background: transparent;
+  border: 1px solid #09d3ac;
+  color: #09d3ac;
+  transform: scale(1.1);
+  transition: .5s all ease-out;
+}
+
+ul {
+  margin-top: 75px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+li {
+  padding: 5px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  transition: .5s all ease-in;
+}
+
+li:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: .5s all ease-out;
+}
+
+.btn-delete{
+  margin-left: 25px;
+  font-size: 30px;
+  background: transparent;
+  color: red;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  color: #282c34;
 }
